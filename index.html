@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style/desktop.css" />
+    <link rel="stylesheet" href="style/mobile.css" />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container flex-center">
+      <div class="component">
+        <div class="left flex-center">
+          <p class="section-title">Your Result</p>
+          <p class="total-score flex-center">
+            <span class="total">76</span>of 100
+          </p>
+          <p class="comment flex-center">
+            <span class="emphasize">Great</span> You scored higher than 65% of
+            the people who have taken these tests.
+          </p>
+        </div>
+        <div class="right">
+          <p class="section-title">Summary</p>
+          <div class="scores flex-center">
+            <div class="flex-center bar reaction">
+              <span class="category-name"
+                ><span class="icon">
+                  <img src="assets/images/icon-reaction.svg" />
+                </span>
+                Reaction</span
+              ><span class="score"
+                ><span class="cat-score"
+                  >80<span class="cat-total"> &nbsp;/ 100</span></span
+                ></span
+              >
+            </div>
+            <div class="flex-center bar memory">
+              <span class="category-name"
+                ><span class="icon"
+                  ><img src="assets/images/icon-memory.svg"
+                /></span>
+                Memory</span
+              >
+              <span class="score"
+                ><span class="cat-score"
+                  >92<span class="cat-total"> &nbsp;/ 100</span></span
+                ></span
+              >
+            </div>
+            <div class="flex-center bar verbal">
+              <span class="category-name"
+                ><span class="icon"
+                  ><img src="assets/images/icon-verbal.svg" /></span
+                >Verbal</span
+              >
+              <span class="score"
+                ><span class="cat-score"
+                  >61<span class="cat-total"> &nbsp;/ 100</span></span
+                ></span
+              >
+            </div>
+            <div class="flex-center bar visual">
+              <span class="category-name"
+                ><span class="icon"
+                  ><img src="assets/images/icon-visual.svg" /></span
+                >Visual</span
+              >
+              <span class="score"
+                ><span class="cat-score"
+                  >72<span class="cat-total"> &nbsp;/ 100</span></span
+                ></span
+              >
+            </div>
+          </div>
+          <a href="#">Continue</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

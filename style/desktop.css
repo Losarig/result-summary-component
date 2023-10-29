@@ -1,0 +1,168 @@
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --gradient-background: linear-gradient(
+    0deg,
+    hsl(241, 81%, 45%),
+    hsl(252, 100%, 67%)
+  );
+  --gradient-circle: linear-gradient(
+    180deg,
+    hsla(256, 73%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  background-color: var(--pale-blue);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left,
+.comment,
+.total-score,
+.scores {
+  flex-direction: column;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.component {
+  width: 800px;
+  display: flex;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left {
+  background: var(--gradient-background);
+  color: var(--light-lavender);
+  border-radius: 40px;
+  padding: 60px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.right {
+  color: var(--dark-gray-blue);
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.total-score {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--gradient-circle);
+}
+
+.total {
+  color: white;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.emphasize {
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.comment,
+.scores {
+  gap: 20px;
+}
+
+a,
+.comment {
+  text-align: center;
+}
+
+.bar {
+  width: 100%;
+  padding: 15px;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.category-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.score {
+  font-weight: 700;
+}
+
+.cat-score {
+  color: var(--dark-gray-blue);
+}
+
+.cat-total {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.reaction {
+  color: var(--light-red);
+  background-color: hsla(0, 100%, 67%, 0.06);
+}
+
+.memory {
+  color: var(--orangey-yellow);
+  background-color: hsla(39, 100%, 56%, 0.06);
+}
+
+.verbal {
+  color: var(--green-teal);
+  background-color: hsla(166, 100%, 37%, 0.06);
+}
+
+.visual {
+  color: var(--cobalt-blue);
+  background-color: hsla(234, 85%, 45%, 0.06);
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background-color: var(--dark-gray-blue);
+  padding: 15px;
+  border-radius: 45px;
+  font-weight: 700;
+}
+
+a:hover,
+a:active {
+  background: var(--gradient-background);
+}

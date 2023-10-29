@@ -1,0 +1,39 @@
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .component {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 100vh;
+  }
+  .left,
+  .right {
+    padding: 10px 40px;
+    width: 100%;
+  }
+  .left {
+    border-radius: 0 0 40px 40px;
+    height: 45%;
+  }
+  .right {
+    height: 55%;
+  }
+  .section-title,
+  .emphasize {
+    font-size: 24px;
+  }
+  .total-score {
+    width: 150px;
+    height: 150px;
+  }
+  .total {
+    font-size: 36px;
+  }
+}
